@@ -1,10 +1,11 @@
 # TryOut
 ## This file contains the solutions to the sql hands on mock
+ ```sql
  * SELECT SUBSTR(EMPLOYEEID,2) "EMPLOYEEID", EMPLOYEENAME
  FROM EMPLOYEE
  WHERE COMPANY
  IN ('Datasys','Wipron');
- 
+
  * SELECT LOCATION, COUNT(CABINID) FROM CABIN GROUP BY LOCATION;
  
  * SELECT C.CABINID, C.LOCATION
@@ -96,3 +97,4 @@ WHERE EXISTS(
 				AND a.AllocatorId=aa.AllocatorId 
 				AND a.EmployeeId<>aa.EmployeeId
 			);
+```
